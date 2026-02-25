@@ -1,15 +1,17 @@
-from pattern_analyzer import analyze_pattern
+from pattern_analyzer import Pattern
 
-sample_text = """
-SECTION - A
+text = """
+SECTION A
+Attempt any 2 questions.
 Q1) Define DBMS - 2 Marks
-Q2. Explain normalization 5M
+Q2) Explain normalization 5M
+OR
 
-PART B:
-4. Explain transactions (10)
-5. Describe ER model : 10
+PART B
+Answer all questions.
+Q3) Explain transactions (10)
 """
 
-result = analyze_pattern(sample_text)
-
-print(result)
+p = Pattern(text)
+p.analyze()
+print(p.summary())
