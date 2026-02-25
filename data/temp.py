@@ -14,4 +14,5 @@ Q3) Explain transactions (10)
 
 p = Pattern(text)
 p.analyze()
+print(p.generate_blueprint())
 print(p.summary())
